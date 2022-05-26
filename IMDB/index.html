@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-800">
+  <div class=" w-full h-full bg-slate-800">
+    <div class="max-w-6xl   bg-white flex justify-between min-h-fit border-4 mx-auto my-20 ">
+      <div class="max-w-3xl rounded-full">
+        <div class="p-3 flex justify-between items-center m-auto ">
+          <div class="columns-1 mr-5">
+            <h2 class="font-mono font-semibold text-blue-900">HOMggE</h2>
+          </div>
+          <div class="columns-1 mr-5">
+            <p class="font-mono font-semibold  text-blue-900">MOVIES</p>
+          </div>
+          <div class="columns-1 mr-5">
+            <h2>
+              <p class="font-mono font-semibold  text-blue-900">SONGS</p>
+            </h2>
+          </div>
+          <div class="columns-1 mr-5">
+            <h2>
+              <p class="font-mono font-semibold  text-blue-900">TRAILER</p>
+            </h2>
+          </div>
+          <div class="columns-1 mr-5">
+            <h2>
+              <p class="font-mono font-semibold  text-blue-900">WATCHLIST</p>
+            </h2>
+          </div>
+        </div>
+        <div class="flex pl-28  pb-5 pt-14 items-center m-auto">
+          <h2 class="font-serif  sm:text-3xl md:text-4xl lg:text-5xl  text-amber-800  px-auto">HELLO,WHAT DO YOU WANT
+            WATCH?</h2>
+        </div>
+        <div class="flex justify-center">
+          <input class="box-content px-auto lg:h-6 w-80 md:h-6 w-40 text-center border-4  " type="text" id="searchBox">
+          </input>
+          <div class="box-content px-5 h-6 w-10 text-center border-4  ">
+            <button onclick=search()>
+              <p class="font-mono font-semibold text-amber-800">Search</p>
+            </button>
+          </div>
+        </div>
+        <h2 id="movie_name"
+          class="font-mono px-3 pt-5 pb-3 font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-neutral-900">Title</h2>
+        <div class="px-3 flex items-center m-auto">
+          <div class="columns-1 mr-4">
+            <p id="imdb_rate" class="font-serif sm:text-xs md:text-base text-stone-400">IMDB</p>
+          </div>
+          <div class="columns-1 mr-4">
+            <p id="Release" class="font-serif sm:text-xs md:text-base text-stone-400">year</p>
+          </div>
+          <div class="columns-1 mr-4">
+            <p id="Time_movie" class="font-serif sm:text-xs md:text-base text-stone-400">Duration</p>
+          </div>
+        </div>
+        <p id="Description" class="SFMono-Regular font-semibold px-3 py-5 text-stone-700">Story of Movie</p>
+      </div>
+
+
+      <div class="max-w-3xl my-auto ">
+        <img id="movie_image" class=" rounded-l-full"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZWtTKGfGHaWKbKzBaw0B_GP60w2hCpbIeA&usqp=CAU"
+          alt="image" />
+      </div>
+    </div>
+    <div class="max-w-6xl  shadow-amber-900 shadow-xl bg-white min-h-fit border-4 mx-auto my-10   ">
+      <div>
+        <h2
+          class="font-mono px-3 pt-5 pb-10 font-semibold lg:text-4xl md:text-3xl md:text-3xl sm:text-2xl font-semibold">
+          Featured today</h2>
+        <div class=" flex justify-between  px-3">
+          <img id="movie_image" class=" md:w-60 h-60  sm:w-30 h-30"
+            src="https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg"
+            alt="image" />
+          <img id="movie_image" class="md:w-60 h-60  sm:w-30 h-30"
+            src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+            alt="image" />
+          <img id="movie_image" class="md:w-60 h-60  sm:w-30 h-30"
+            src="https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+            alt="image" />
+          <img id="movie_image" class="md:w-60 h-60  sm:w-30 h-30"
+            src="https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ@._V1_SX300.jpg"
+            alt="image" />
+        </div>
+        <div>
+          <h2 class="font-mono px-3 pt-5 pb-5 font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-neutral-900">Top
+            box office (US)
+          </h2>
+        </div>
+        <div class="flex flex-row px-3 pb-5">
+          <h4 class="mr-4">1</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+          <p class="font-serif text-amber-800 mr-3">Doctor Strange in the Multiverse of Madness</br> $297,428,080</p>
+        </div>
+        <div class="flex flex-row px-3 pb-5">
+          <h4 class="mr-4">2</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+          <p class="font-serif text-amber-800 mr-3">The Bad Guys</br> $28,344,400</p>
+        </div>
+        <div class="flex flex-row px-3 pb-5">
+          <h4 class="mr-4">3</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+          <p class="font-serif text-amber-800 mr-3">The Avengers</br> $623,357,910</p>
+        </div>
+        <div class="flex flex-row px-3 pb-5">
+          <h4 class="mr-4">4</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+          <p class="font-serif text-amber-800 mr-3">Avatar</br> $760,507,625</p>
+        </div>
+        <div class="flex flex-row px-3 pb-5">
+          <h4 class="mr-4">5</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+          <p class="font-serif text-amber-800 mr-3 pb-5">Sonic the Hedgehog 2</br> $175,804,271</p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+var API_KEY = "3a37651c";
+var searchBoxElement = document.getElementById("searchBox");
+var movieNameElement = document.getElementById("movie_name");
+var movieImgElement = document.getElementById("movie_image");
+var movieImdbElement = document.getElementById("imdb_rate");
+var movieTimeElement = document.getElementById("Time_movie");
+var movieReleasedElement = document.getElementById("Release");
+var movieAboutElement = document.getElementById("Description");
+
+var getMovieUrlByID = function (movieID) {
+  return `http://www.omdbapi.com/?i=${movieID}&apikey=${API_KEY}`;
+};
+
+var getMovieUrlByName = function (movieName) {
+  return `http://www.omdbapi.com/?t=${movieName}&apikey=${API_KEY}`;
+};
+async function fetchMovie(type, data) {
+  try {
+    var url = type == "id" ? getMovieUrlByID(data) : getMovieUrlByName(data);
+    var movieFetchObject = await fetch(url);
+    var movieData = await movieFetchObject.json();
+    return movieData;
+  } catch (e) {
+    console.log("error in fetch the movie");
+  }
+}
+
+function mySearch() {
+  const searchBoxElement = document.getElementById("searchBox").value;
+  fetchMovie("name", searchBoxElement).then(function (movieData) {
+    console.log("got movie data", movieData);
+    movieNameElement.innerText = movieData.Title;
+    movieImgElement.setAttribute("src", movieData.Poster);
+    movieImdbElement.innerText = movieData.imdbRating;
+    movieTimeElement.innerText = movieData.Runtime;
+    movieReleasedElement.innerText = movieData.Year;
+    movieAboutElement.innerText = movieData.Plot;
+  });
+}
+
+
+https://github.com/MuniyasamyV/IMDB-RATING.git
