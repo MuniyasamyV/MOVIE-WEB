@@ -4,203 +4,259 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Work+Sans:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Work+Sans:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/reload/reload.js"></script>
 </head>
+<style>
+</style>
 
-<body class="bg-slate-800">
-  <div class=" w-full h-full bg-slate-800">
-    <div class="max-w-6xl   bg-white flex justify-between min-h-fit border-4 mx-auto my-20 ">
-      <div class="max-w-3xl rounded-full">
-        <div class="p-3 flex justify-between items-center m-auto ">
+<body style="background-color: #212121;">
+  <div class=" w-full h-full">
+    <div class="max-w-5xl m-h-screen flex justify-between min-h-fit border-4 mx-auto my-20 rounded-3xl   "
+      style="background-color:#00BCD4">
+      <div class="max-w-3xl ">
+        <div class="pl-3 py-5 flex justify-between items-center m-auto ">
           <div class="columns-1 mr-5">
-            <h2 class="font-mono font-semibold text-blue-900">HOMggE</h2>
+            <h2 class="font-mono font-family:Menlo font-semibold " style="color: #212121">HOME</h2>
           </div>
           <div class="columns-1 mr-5">
-            <p class="font-mono font-semibold  text-blue-900">MOVIES</p>
+            <p class="font-mono font-family:Menlo font-semibold " style="color: #212121">MOVIES</p>
           </div>
           <div class="columns-1 mr-5">
             <h2>
-              <p class="font-mono font-semibold  text-blue-900">SONGS</p>
+              <p class="font-mono font-family:Menlo font-semibold " style="color: #212121">SONGS</p>
             </h2>
           </div>
           <div class="columns-1 mr-5">
             <h2>
-              <p class="font-mono font-semibold  text-blue-900">TRAILER</p>
+              <p class="font-mono font-family:Menlo font-semibold  " style="color: #212121">TRAILER</p>
             </h2>
           </div>
           <div class="columns-1 mr-5">
             <h2>
-              <p class="font-mono font-semibold  text-blue-900">WATCHLIST</p>
+              <p class="font-mono font-family:Menlo font-semibold " style="color: #212121">WATCHLIST</p>
             </h2>
           </div>
         </div>
-        <div class="flex pl-28  pb-5 pt-14 items-center m-auto">
-          <h2 class="font-serif  sm:text-3xl md:text-4xl lg:text-5xl  text-amber-800  px-auto">HELLO,WHAT DO YOU WANT
+        <div class="flex mb-3 pt-14 items-center justify-center m-auto">
+          <h2 class="sm:text-3xl md:text-4xl lg:text-5xl leading-10 tracking-wider   mx-auto items-center text-center"
+            style="color:#FFFFFF ;">HELLO,WHAT DO YOU WANT
             WATCH?</h2>
         </div>
-        <div class="flex justify-center">
-          <input class="box-content px-auto lg:h-6 w-80 md:h-6 w-40 text-center border-4  " type="text" id="searchBox">
-          </input>
-          <div class="box-content px-5 h-6 w-10 text-center border-4  ">
-            <button onclick=search()>
-              <p class="font-mono font-semibold text-amber-800">Search</p>
+        <div class="flex items-center justify-center ">
+          <div class="flex border-2  border-gray-200 rounded">
+            <input type="text" id="searchBox" class="mx-auto py-3 w-60 h-10" placeholder="Search Movie...">
+            <button onclick="mySearch()" class="px-4 text-white border-l " style="background-color:#0097A7">
+              Search
             </button>
           </div>
         </div>
         <h2 id="movie_name"
-          class="font-mono px-3 pt-5 pb-3 font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-neutral-900">Title</h2>
-        <div class="px-3 flex items-center m-auto">
-          <div class="columns-1 mr-4">
-            <p id="imdb_rate" class="font-serif sm:text-xs md:text-base text-stone-400">IMDB</p>
+          class="font-sans,font-family: sans-serif px-3 pt-14 pb-3 font-medium lg:text-4xl md:text-3xl sm:text-2xl ">
+          Title</h2>
+        <div class="px-3 mb-3 flex items-center m-auto">
+          <div class="columns-1 mr-4 ">
+            <p id="imdb_rate" class="font-sans font-normal font-family:Arial sm:text-xs md:text-base "
+              style="color: #757575;">IMDB</p>
           </div>
-          <div class="columns-1 mr-4">
-            <p id="Release" class="font-serif sm:text-xs md:text-base text-stone-400">year</p>
+          <div class="columns-1 mr-4 ">
+            <p id="Release" class="font-sans font-normal font-family:Arial sm:text-xs md:text-base "
+              style="color: #757575;">Year</p>
           </div>
-          <div class="columns-1 mr-4">
-            <p id="Time_movie" class="font-serif sm:text-xs md:text-base text-stone-400">Duration</p>
+          <div class="columns-1 mr-4 ">
+            <p id="Time_movie" class="font-sans font-normal font-family:Arial sm:text-xs md:text-base "
+              style="color: #757575;">Duration</p>
           </div>
         </div>
-        <p id="Description" class="SFMono-Regular font-semibold px-3 py-5 text-stone-700">Story of Movie</p>
+        <p id="Description" class="SFMono-Regular font-semibold pl-3 pb-5 ">Story of Movie</p>
       </div>
 
-
-      <div class="max-w-3xl my-auto ">
-        <img id="movie_image" class=" rounded-l-full"
+      <!-- <img id="movie_image" class="rounded-l-full"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZWtTKGfGHaWKbKzBaw0B_GP60w2hCpbIeA&usqp=CAU"
+          alt="image" /> -->
+      <div class="max-w-3xl">
+        <img id="movie_image" class="rounded-l-full rounded-tr-3xl hover:rounded-none shadow-2xl"
+          src="https://images.unsplash.com/photo-1596727147705-61a532a659bd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500"
           alt="image" />
       </div>
     </div>
-    <div class="max-w-6xl  shadow-amber-900 shadow-xl bg-white min-h-fit border-4 mx-auto my-10   ">
+  </div>
+  </div>
+  <div class="max-w-5xl rounded-3xl min-h-fit border-4 mx-auto my-20 " style="background-color:#00BCD4">
+    <div>
+      <h2
+        class="font-sans,font-family: sans-serif px-3 pt-5 pb-10 font-medium lg:text-4xl md:text-3xl md:text-3xl sm:text-2xl font-semibold">
+        Featured today</h2>
+      <div class=" flex justify-between  px-3">
+        <img id="movie_image" class=" shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+          src="https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg"
+          alt="image" />
+        <img id="movie_image" class=" shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+          src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+          alt="image" />
+        <img id="movie_image" class="shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+          src="https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+          alt="image" />
+        <img id="movie_image" class="shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+          src="https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ@._V1_SX300.jpg"
+          alt="image" />
+      </div>
       <div>
         <h2
-          class="font-mono px-3 pt-5 pb-10 font-semibold lg:text-4xl md:text-3xl md:text-3xl sm:text-2xl font-semibold">
-          Featured today</h2>
-        <div class=" flex justify-between  px-3">
-          <img id="movie_image" class=" md:w-60 h-60  sm:w-30 h-30"
-            src="https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg"
-            alt="image" />
-          <img id="movie_image" class="md:w-60 h-60  sm:w-30 h-30"
-            src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-            alt="image" />
-          <img id="movie_image" class="md:w-60 h-60  sm:w-30 h-30"
-            src="https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
-            alt="image" />
-          <img id="movie_image" class="md:w-60 h-60  sm:w-30 h-30"
-            src="https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ@._V1_SX300.jpg"
-            alt="image" />
-        </div>
-        <div>
-          <h2 class="font-mono px-3 pt-5 pb-5 font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-neutral-900">Top
-            box office (US)
-          </h2>
-        </div>
-        <div class="flex flex-row px-3 pb-5">
-          <h4 class="mr-4">1</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
-            viewBox="0 0 16 16">
-            <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-            <path
-              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
-          </svg>
-          <p class="font-serif text-amber-800 mr-3">Doctor Strange in the Multiverse of Madness</br> $297,428,080</p>
-        </div>
-        <div class="flex flex-row px-3 pb-5">
-          <h4 class="mr-4">2</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
-            viewBox="0 0 16 16">
-            <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-            <path
-              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
-          </svg>
-          <p class="font-serif text-amber-800 mr-3">The Bad Guys</br> $28,344,400</p>
-        </div>
-        <div class="flex flex-row px-3 pb-5">
-          <h4 class="mr-4">3</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
-            viewBox="0 0 16 16">
-            <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-            <path
-              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
-          </svg>
-          <p class="font-serif text-amber-800 mr-3">The Avengers</br> $623,357,910</p>
-        </div>
-        <div class="flex flex-row px-3 pb-5">
-          <h4 class="mr-4">4</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
-            viewBox="0 0 16 16">
-            <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-            <path
-              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
-          </svg>
-          <p class="font-serif text-amber-800 mr-3">Avatar</br> $760,507,625</p>
-        </div>
-        <div class="flex flex-row px-3 pb-5">
-          <h4 class="mr-4">5</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-plus w-4 h-6 mr-1"
-            viewBox="0 0 16 16">
-            <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-            <path
-              d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
-          </svg>
-          <p class="font-serif text-amber-800 mr-3 pb-5">Sonic the Hedgehog 2</br> $175,804,271</p>
-        </div>
+          class="font-sans,font-family: sans-serif font-medium px-3 pb-10 pt-5 lg:text-4xl md:text-3xl sm:text-2xl text-neutral-900">
+          Top
+          box office (US)
+        </h2>
+      </div>
+      <div class="flex flex-row px-3 pb-5">
+        <h4 class="mr-4">1</h4>
+        <span class="material-symbols-outlined mr-3">
+          bookmark_add
+        </span>
+        <p class="font-serif  mr-3 pb-5" style="color:#212121">Doctor Strange in the Multiverse of Madness</br> <span
+            style="color: #757575;"> $297,428,080</span></p>
+      </div>
+      <div class="flex flex-row px-3 pb-5">
+        <h4 class="mr-4">2</h4>
+        <span class="material-symbols-outlined mr-3">
+          bookmark_add
+        </span>
+        <p class="font-serif mr-3 pb-5" style="color:#212121">Sonic the Hedgehog 2</br> <span style="color: #757575;">
+            $623,357,910</span></p>
+      </div>
+      <div class="flex flex-row px-3 pb-5">
+        <h4 class="mr-4">3</h4>
+        <span class="material-symbols-outlined mr-3">
+          bookmark_add
+        </span>
+        <p class="font-serif mr-3 pb-5" style="color:#212121">The Avengers</br> <span style="color: #757575;">
+            $623,357,910</span></p>
+
+      </div>
+      <div class="flex flex-row px-3 pb-5">
+        <h4 class="mr-4">4</h4>
+        <span class="material-symbols-outlined mr-3">
+          bookmark_add
+        </span>
+        <p class="font-serif  mr-3 pb-5" style="color:#212121">Avatar</br> <span style="color: #757575;">
+            $760,507,625</span></p>
+      </div>
+      <div class="flex flex-row px-3 pb-5">
+        <h4 class="mr-4">5</h4>
+        <span class="material-symbols-outlined mr-3">
+          bookmark_add
+        </span>
+        <p class="font-serif mr-3 pb-5" style="color:#212121">Sonic the Hedgehog 2</br> <span style="color: #757575;">
+            $623,357,910</span></p>
       </div>
     </div>
-    <script src="./main.js"></script>
+  </div>
+  <div class="max-w-5xl rounded-3xl min-h-fit border-4 mx-auto my-20 " style="background-color:#00BCD4">
+    <div>
+      <h2
+        class="font-sans,font-family: sans-serif px-3 pt-5 pb-10 font-medium lg:text-4xl md:text-3xl md:text-3xl sm:text-2xl font-semibold">
+        Explore What's Streaming</h2>
+      <div class="max-w-3xl ">
+        <div class="pl-3 py-5 flex justify-between items-center m-auto ">
+          <div class="columns-1 mr-5">
+            <h2 class="font-mono font-family:Menlo font-semibold " style="color: #212121">PRIME VIDEO</h2>
+          </div>
+          <div class="columns-1 mr-5">
+            <p class="font-mono font-family:Menlo font-semibold " style="color: #212121">NETFLIX</p>
+          </div>
+          <div class="columns-1 mr-5">
+            <h2>
+              <p class="font-mono font-family:Menlo font-semibold " style="color: #212121">HOTSTAR</p>
+            </h2>
+          </div>
+          <div class="columns-1 mr-5">
+            <h2>
+              <p class="font-mono font-family:Menlo font-semibold  " style="color: #212121">MX PLAYER</p>
+            </h2>
+          </div>
+          <div class="columns-1 mr-5">
+            <h2>
+              <p class="font-mono font-family:Menlo font-semibold " style="color: #212121">SONY LIV</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between ">
+        <div class="shadow-2xl border-2 ml-3">
+          <img class=""
+            src="https://m.media-amazon.com/images/M/MV5BODk4ZjU0NDUtYjdlOS00OTljLTgwZTUtYjkyZjk1NzExZGIzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg"
+            alt="img" />
+            <div class="flex flex-row my-3 mx-2">
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <p id="imdb_rate" class="font-sans font-normal font-family:Arial sm:text-xs md:text-base "
+                style="color: #757575;">8.8</p>
+            </div>
+            <p class="mx-2">vikings</p>
+        </div>
+        <div class="  shadow-2xl border-2">
+          <img class=""
+            src="https://m.media-amazon.com/images/M/MV5BNGM2ZjJmZDQtNTI5MS00ZTI0LTkyNjktM2RlYWY0YTY5MTYzXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg"
+            alt="img" />
+            <div class="flex flex-row my-3 mx-2">
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <p id="imdb_rate" class="font-sans font-normal font-family:Arial sm:text-xs md:text-base "
+                style="color: #757575;">8.5</p>
+            </div>
+            <p class="mx-2">Moon Knight</p>
+        </div>
+        <div class=" shadow-2xl border-2">
+          <img class=""
+            src="https://m.media-amazon.com/images/M/MV5BODFhZjAwNjEtZDFjNi00ZTEyLThkNzUtMjZmOWM2YjQwODFmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_SX300.jpg"
+            alt="img" />
+            <div class="flex flex-row my-3 mx-2">
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <p id="imdb_rate" class="font-sans font-normal font-family:Arial sm:text-xs md:text-base "
+                style="color: #757575;">8.9</p>
+            </div>
+            <p class="mx-2">Breaking Bad</p>
+        </div>
+       
+        <div class=" card shadow-2xl border-2 ">
+          <img class=""
+            src="https://m.media-amazon.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_SX300.jpg"
+            alt="img" />
+
+            <div class="flex flex-row my-3 mx-2">
+              <span class="material-symbols-outlined">
+                star
+              </span>
+              <p id="imdb_rate" class="font-sans font-normal font-family:Arial sm:text-xs md:text-base "
+                style="color: #757575;">8.2</p>
+            </div>
+            <p class="mx-2">Prison Break</p>
+        </div>
+        </div>
+      </div>
+  </div>
+</div>
+  <script src="./main.js"></script>
+  </div>
 </body>
 
 
 </html>
-
-
-
-
-
-
-var API_KEY = "3a37651c";
-var searchBoxElement = document.getElementById("searchBox");
-var movieNameElement = document.getElementById("movie_name");
-var movieImgElement = document.getElementById("movie_image");
-var movieImdbElement = document.getElementById("imdb_rate");
-var movieTimeElement = document.getElementById("Time_movie");
-var movieReleasedElement = document.getElementById("Release");
-var movieAboutElement = document.getElementById("Description");
-
-var getMovieUrlByID = function (movieID) {
-  return `http://www.omdbapi.com/?i=${movieID}&apikey=${API_KEY}`;
-};
-
-var getMovieUrlByName = function (movieName) {
-  return `http://www.omdbapi.com/?t=${movieName}&apikey=${API_KEY}`;
-};
-async function fetchMovie(type, data) {
-  try {
-    var url = type == "id" ? getMovieUrlByID(data) : getMovieUrlByName(data);
-    var movieFetchObject = await fetch(url);
-    var movieData = await movieFetchObject.json();
-    return movieData;
-  } catch (e) {
-    console.log("error in fetch the movie");
-  }
-}
-
-function mySearch() {
-  const searchBoxElement = document.getElementById("searchBox").value;
-  fetchMovie("name", searchBoxElement).then(function (movieData) {
-    console.log("got movie data", movieData);
-    movieNameElement.innerText = movieData.Title;
-    movieImgElement.setAttribute("src", movieData.Poster);
-    movieImdbElement.innerText = movieData.imdbRating;
-    movieTimeElement.innerText = movieData.Runtime;
-    movieReleasedElement.innerText = movieData.Year;
-    movieAboutElement.innerText = movieData.Plot;
-  });
-}
-
-
-https://github.com/MuniyasamyV/IMDB-RATING.git
