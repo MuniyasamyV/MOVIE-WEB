@@ -11,6 +11,9 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
+.test{
+    color: red;
+}
 
 .card-2 {
     width: 300px;
@@ -49,4 +52,46 @@
     width: 200px;
     height: 50px;
 
+}
+.head-1{
+     font-family: 'Roboto', 'sans-seri';
+     font-weight: 700;
+     font-size: 60px;
+     color:#FFFFFF ; 
+}
+.head-2{
+    font-family: 'Roboto', 'sans-seri';
+    font-weight: 700;
+    font-size: 14px;
+    color: #212121;
+}
+.head-21{
+    font-family: 'Roboto', 'sans-seri';
+    font-weight: 400;
+    font-size: 16px;
+    color: #212121;
+}
+.head-22{
+    font-family: 'Roboto', 'sans-seri';
+    font-weight: 400;
+    font-size: 34px;
+    color: #212121;
+                
+}
+.subhead-1{
+    font-family: 'Roboto', 'sans-seri';
+    font-weight: 400;
+    font-size: 16px; 
+    color: #757575;
+}
+.banner-shadow{
+    background-color:#00BCD4; 
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+.head-num{
+    font-family: 'Roboto', 'sans-seri';
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
 }
