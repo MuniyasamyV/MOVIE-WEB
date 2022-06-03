@@ -1,0 +1,5 @@
+tasks:
+  - init: curl -sL https://firebase.tools | bash
+ports:
+  - port: 3000
+    onOpen: open-preview
