@@ -37,5 +37,41 @@ function mySearch() {
     movieAboutElement.innerText = movieData.Plot;
   });
 }
-
+function sections(id){ 
+  if(id==="section-1"){
+    document.getElementById("section-1").style.display="block";
+    document.getElementById("section-2").style.display="none";
+    document.getElementById("section-3").style.display="none";
+    document.getElementById("section-4").style.display="none";
+    document.getElementById("section-5").style.display="none";
+  }
+  else if(id==="section-2"){
+    document.getElementById("section-2").style.display="block";
+    document.getElementById("section-1").style.display="none";
+    document.getElementById("section-3").style.display="none";
+    document.getElementById("section-4").style.display="none";
+    document.getElementById("section-5").style.display="none";
+  }
+  else if(id==="section-3"){
+    document.getElementById("section-3").style.display="block";
+    document.getElementById("section-1").style.display="none";
+    document.getElementById("section-2").style.display="none";
+    document.getElementById("section-4").style.display="none";
+    document.getElementById("section-5").style.display="none";
+  }
+  else if(id==="section-4"){
+    document.getElementById("section-4").style.display="block";
+    document.getElementById("section-1").style.display="none";
+    document.getElementById("section-2").style.display="none";
+    document.getElementById("section-3").style.display="none";
+    document.getElementById("section-5").style.display="none";
+  }
+  else{
+    document.getElementById("section-5").style.display="block";
+    document.getElementById("section-1").style.display="none";
+    document.getElementById("section-2").style.display="none";
+    document.getElementById("section-3").style.display="none";
+    document.getElementById("section-4").style.display="none";
+  }
+}
 

@@ -1,25 +1,102 @@
-
-.title-2{
+.title-2 {
     font-family: 'Roboto', 'sans-seri';
     font-weight: 400;
     font-size: 48px;
     color: #212121;
 }
 
-.title-1{
+.title-4 {
+    font-family: 'Roboto', 'sans-seri';
+    font-weight: 400;
+    font-size: 34px;
+    color: #212121;
+}
+
+.title-5 {
     font-family: 'Roboto', 'sans-seri';
     font-weight: 400;
     font-size: 24px;
     color: #212121;
 }
-.movie-detail{
+
+.movie-detail {
     font-family: 'Roboto', 'sans-seri';
     font-weight: 400;
-    font-size: 14px; color: #757575;
+    font-size: 14px;
+    color: #757575;
 }
-.movie-name{
+
+.movie-name {
     font-family: 'Roboto', 'sans-seri';
     font-weight: 700;
     font-size: 16px;
     color: #212121;
+}
+
+@media (max-width: 768px) {
+    .head-1 {
+        font-family: 'Roboto', 'sans-seri';
+        font-weight: 700;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    .md {
+        display: flex;
+        width: 1024px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head-22 {
+        font-family: 'Roboto', 'sans-seri';
+        font-weight: 400;
+        font-size: 16px;
+        color: #212121;
+    }
+
+    #movie_image {
+        display: none;
+    }
+
+    .subhead-1 {
+        font-family: 'Roboto', 'sans-seri';
+        font-weight: 400;
+        font-size: 12px;
+        color: #757575;
+    }
+
+    .head-21 {
+        font-family: 'Roboto', 'sans-seri';
+        font-weight: 400;
+        font-size: 14px;
+        color: #212121;
+    }
+
+    .heading_2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-2md {
+        font-family: 'Roboto', 'sans-seri';
+        font-weight: 400;
+        font-size: 36px;
+        color: #212121;
+    }
+
+    .title-4md {
+        font-family: 'Roboto', 'sans-seri';
+        font-weight: 400;
+        font-size: 24px;
+        color: #212121;
+    }
+
+    .title-5md {
+        font-family: 'Roboto', 'sans-seri';
+        font-weight: 400;
+        font-size: 16px;
+        color: #212121;
+    }
 }

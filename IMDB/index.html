@@ -30,43 +30,51 @@
 <body style="background-color: #212121;">
     <div class=" w-full h-full">
         <header class="max-w-5xl m-h-screen  min-h-fit mx-auto my-20 rounded-3xl banner-shadow">
-            <nav class="pl-3 pr-3 py-5 flex justify-between items-center m-auto ">
-                <div class="columns-1">
-                    <h2 class="head-2"> FEATURE</h2>
-                </div>
-                <div class="columns-1">
-                    <h2 class="head-2">BOX OFFICE</h2>
-                </div>
-                <div class="columns-1">
+            <nav class="pl-3 pr-3 py-5  ">
+                <ul class="flex flex-row justify-between">
+               <li>
+                    <h2 class="head-2"><a href="#section-1">FEATURE</a> </h2>
+                </a>
+
+            </li>
+                <li>
+                    <a href="#section-2">
+                    <h2 class="head-2"> STREAMING</a></h2>
+                </a>
+                </li>
+                <li>
+                    <a href="#section-3">
                     <h2 class="head-2">
-                        STREAMING
+                        SHOWING</a>
                     </h2>
-                </div>
-                <div class="columns-1">
-                    <h2 class="head-2">
-                        SHOWING
-                    </h2>
-                </div>
-                <div class="columns-1 ">
-                    <h2 class="head-2">
-                        CATEGORY
-                    </h2>
-                </div>
-                <div class="columns-1">
+                </a>
+                </li>
+               <li>
+                <a href="#section-4">
                     <h2 class="head-2">
                         REVIEW
                     </h2>
-                </div>
+                </a>
+                </li>
+               <li>
+                <a href="#section-5">
+                    <h2 class="head-2">
+                      FOOTER
+                    </h2>
+                </a>
+                </li>
+                
+            </ul>
             </nav>
             <div class="flex flex-row justify-between">
-                <div class="max-w-3xl ">
+                <div class="max-w-3xl md">
                     <div class="flex mb-3 pt-14 items-center justify-center m-auto">
-                        <h1 class=" mx-auto items-center text-center head-1">HELLO,WHAT DO YOU WANT
+                        <h1 class=" mx-auto items-center text-center head-1 l">HELLO,WHAT DO YOU WANT
                             WATCH?</h1>
                     </div>
                     <div class="flex items-center justify-center ">
                         <div class="flex border-2  border-gray-200 rounded">
-                            <input type="text" id="searchBox" class="mx-auto py-3 w-60 h-10"
+                            <input type="text" id="searchBox" class="mx-auto py-3 p-10 w-60 h-10"
                                 placeholder="Search Movie...">
                             <button onclick="mySearch()" class="px-4 text-white border-l head-2 ">
                                 Search
@@ -87,38 +95,37 @@
                     </div>
                     <p id="Description" class=" pl-3 pb-5 head-21">Story of Movie</p>
                 </div>
-                <div class="max-w-3xl  my-auto">
-                    <img id="movie_image" class="rounded-l-full rounded-tr-3xl hover:rounded-none shadow-2xl"
-                        src="https://images.unsplash.com/photo-1596727147705-61a532a659bd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500"
-                        alt="image" />
+                <div class="max-w-3xl  my-auto ">
+                    <img id="movie_image" class="rounded-l-full rounded-tr-3xl hover:rounded-none shadow-2xl sm:"
+                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3wqv5k499ZORub3i-u02YuB0ZCsUJ3Yuiw&usqp=CAU" alt="image"/>
                 </div>
             </div>
         </div>
     </div>
 </header>
-    <section class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
+    <section id=section-1 class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
         <div>
-            <h2 class=" px-3 pt-5 pb-10 title-2">
+            <h2 class=" px-3 pt-5 pb-10 title-2 heading_2 title-2md">
                 Featured today</h2>
             <div class=" flex justify-between  px-3">
-                <img id="movie_image" class=" shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+                <img class=" shadow-2xl md:w-60 h-60  sm:w-30 h-30"
                     src="https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg"
                     alt="image" />
-                <img id="movie_image" class=" shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+                <img class=" shadow-2xl md:w-60 h-60  sm:w-30 h-30"
                     src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
                     alt="image" />
-                <img id="movie_image" class="shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+                <img class="shadow-2xl md:w-60 h-60  sm:w-30 h-30"
                     src="https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
                     alt="image" />
-                <img id="movie_image" class="shadow-2xl md:w-60 h-60  sm:w-30 h-30"
+                <img class="shadow-2xl md:w-60 h-60  sm:w-30 h-30"
                     src="https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ@._V1_SX300.jpg"
                     alt="image" />
             </div>
             <div>
-                <h3 class=" px-3 pb-10 pt-5 title-2">
+                <h2 class=" px-3 pb-10 pt-5 title-4 title-4md">
                     Top
                     box office (US)
-                </h3>
+                </h2>
             </div>
             <div class="flex flex-row ">
                 <div>
@@ -127,7 +134,7 @@
                         <span class="material-symbols-outlined mr-3 mt-2" style="color: #FFFFFF;">
                             bookmark_add
                         </span>
-                        <h5 class=" mr-3 pb-5 title-1">Doctor Strange in the Multiverse of
+                        <h5 class=" mr-3 pb-5 title-5 title-5md">Doctor Strange in the Multiverse of
                             Madness</br> <span class="subhead-1"> $297,428,080</span></h5>
                     </div>
                     <div class="flex flex-row px-3 pb-5">
@@ -135,7 +142,7 @@
                         <span class="material-symbols-outlined mr-3 mt-2" style="color: #FFFFFF;">
                             bookmark_add
                         </span>
-                        <h5 class="mr-3 pb-5 title-1">Sonic the Hedgehog 2</br> <span class="subhead-1">
+                        <h5 class="mr-3 pb-5 title-5 title-5md">Sonic the Hedgehog 2</br> <span class="subhead-1">
                                 $623,357,910</span></h5>
                     </div>
                     <div class="flex flex-row px-3 pb-5">
@@ -143,7 +150,7 @@
                         <span class="material-symbols-outlined mr-3 mt-2" style="color: #FFFFFF;">
                             bookmark_add
                         </span>
-                        <h5 class=" mr-3 pb-5  title-1">The Avengers</br> <span class="subhead-1">
+                        <h5 class=" mr-3 pb-5  title-5 title-5md">The Avengers</br> <span class="subhead-1">
                                 $623,357,910</span></h5>
                     </div>
                 </div>
@@ -153,10 +160,7 @@
                         <span class="material-symbols-outlined mr-3 mt-2" style="color:#FFFFFF">
                             bookmark_add
                         </span>
-                        <h5 class=" mr-3 pb-5" style=" font-family: 'Roboto', 'sans-seri';
-                        font-weight: 400;
-                        font-size: 24px;
-                        color: #212121;">Avatar</br> <span class="subhead-1">
+                        <h5 class=" mr-3 pb-5 title-5 title-5md">The Lost City</br> <span class="subhead-1">
                                 $760,507,625</span></h5>
                     </div>
                     <div class="flex flex-row px-3 pb-5">
@@ -166,75 +170,90 @@
                                 bookmark_add
                             </span>
                         </div>
-                        <h5 class=" mr-3 pb-5  title-1">Sonic the Hedgehog 2</br> <span class="subhead-1">
+                        <h5 class=" mr-3 pb-5  title-5 title-5md">Sonic the Hedgehog 2</br> <span class="subhead-1">
                                 $623,357,910</span></h5>
+                    </div>
+                    <div class="flex flex-row px-3 pb-5">
+                        <h5 class="mr-4 mt-2 subhead-1">5</h5>
+                        <div>
+                            <span class="material-symbols-outlined mr-3 mt-2" style="color: #FFFFFF">
+                                bookmark_add
+                            </span>
+                        </div>
+                        <h5 class=" mr-3 pb-5  title-5 title-5md">Dog</br> <span class="subhead-1">
+                                $623,357,910</span></h5>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-row px-3 pb-5">
+                        <h5 class="mr-4 mt-2 subhead-1">4</h5>
+                        <span class="material-symbols-outlined mr-3 mt-2" style="color:#FFFFFF">
+                            bookmark_add
+                        </span>
+                        <h5 class=" mr-3 pb-5 title-5 title-5md">The Batman</br> <span class="subhead-1">
+                                $760,507,625</span></h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
+    <section  id=section-2 class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
         <div>
-            <h3 class="px-3 pt-5 pb-10 title-2">
-                Explore What's Streaming</h3>
+            <h2 class="px-3 pt-5 pb-10 title-2 heading_2 title-2md">
+                Explore What's Streaming</h2>
 
-            <div class="flex justify-between pb-5 ">
-                <div class=" card ml-3">
-                    <img class="img"
+            <div class="flex justify-between pb-5 mx-3 ">
+                <div class=" card relative">
+                    <img class="img rounded-b"
                         src="https://m.media-amazon.com/images/M/MV5BNGM2ZjJmZDQtNTI5MS00ZTI0LTkyNjktM2RlYWY0YTY5MTYzXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg"
                         alt="img" />
-                    <div class="flex flex-row my-3 mx-2 ">
+                    <div class="flex flex-row my-3 mx-2.5 absolute " style="top: 300px;">
                         <span class="material-symbols-outlined" style="color: #FFFFFF;">
                             star
                         </span>
-                        <p id="imdb_rate" class="subhead-1">8.5</p>
+                        <p class="subhead-1">8.5</p>
                     </div>
-                    <h5 class="mx-2 title-1">Moon Knight</h5>
-                    <div class="flex mx-auto mt-3 flex-row justify-center" style=" width: 250px; height: 30px;box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-                     border-radius: 4px;
+                    <h5 class="m-2.5 title-5">Moon Knight</h5>
+                    <div class="flex flex-row justify-center m-2.5 p-2.5 rounded" style="background-color: #212121">
                      ">
-                        <h6 class="text-center subhead-1">Watch Now</h6>
+                        <h6 class="text-center subhead-1" style="color: #FFFFFF">Watch Now</h6>
                         <span class="material-symbols-outlined" style="color: #FFFFFF;">
                             slideshow
                         </span>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="img"
+                <div class="card relative">
+                    <img class="img rounded-b"
                         src="https://m.media-amazon.com/images/M/MV5BODFhZjAwNjEtZDFjNi00ZTEyLThkNzUtMjZmOWM2YjQwODFmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_SX300.jpg"
                         alt="img" />
-                    <div class="flex flex-row my-3 mx-2 ">
+                    <div class="flex flex-row my-3 mx-2.5 absolute" style="top: 300px;">
                         <span class="material-symbols-outlined" style="color: #FFFFFF;">
                             star
                         </span>
-                        <p id="imdb_rate" class="subhead-1">8.9</p>
+                        <p class="subhead-1">8.9</p>
                     </div>
-                    <h5 class="mx-2  title-1">Breaking Bad</h5>
-                    <div class="flex mx-auto mt-3 flex-row justify-center" style=" width: 250px; height: 30px;box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-                     border-radius: 4px;
-                     ">
-                        <h6 class="text-center subhead-1">Watch Now</h6>
+                    <h5 class="m-2.5  title-5">Breaking Bad</h5>
+                    <div class="flex flex-row justify-center m-2.5 p-2.5 rounded" style="background-color: #212121;">
+                        <h6 class="text-center subhead-1" style="color: #FFFFFF">Watch Now</h6>
                         <span class="material-symbols-outlined" style="color: #FFFFFF;">
                             slideshow
                         </span>
                     </div>
                 </div>
-                <div class=" card mr-3">
-                    <img class="img"
+                <div class=" card relative">
+                    <img class="img rounded-b"
                         src="https://m.media-amazon.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_SX300.jpg"
                         alt="img" />
 
-                    <div class="flex flex-row  my-3 mx-2 ">
+                    <div class="flex flex-row my-3 mx-2.5 absolute " style="top: 300px;">
                         <span class="material-symbols-outlined" style="color: #FFFFFF;">
                             star
                         </span>
-                        <p id="imdb_rate" class="subhead-1">8.2</p>
+                        <p class="subhead-1">8.2</p>
                     </div>
-                    <h5 class="mx-2  title-1">Prison Break</h5>
-                    <div class="flex mx-auto mt-3 flex-row justify-center" style=" width: 250px; height: 30px;box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-                    border-radius: 4px;
-                    ">
-                        <h6 class="text-center subhead-1">Watch Now</h6>
+                    <h5 class="m-2.5  title-5">Prison Break</h5>
+                    <div class="flex flex-row justify-center m-2.5 p-2.5 rounded" style="background-color: #212121" >
+                        <h6 class="text-center subhead-1" style="color: #FFFFFF;">Watch Now</h6>
                         <span class="material-symbols-outlined" style="color: #FFFFFF;">
                             slideshow
                         </span>
@@ -244,16 +263,22 @@
         </div>
     </div>
     </section>
-    <section class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
+    <section  id=section-3 class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
         <div>
-            <h3 class="px-3 pt-5 pb-10 title-2">
-                Now Showing</h3>
-            <div class="flex pb-5 ">
-                <div class=" card-1 ml-3 mr-8">
-                    <img class="img-1"
+            <h2 class="px-3 pt-5 pb-10 title-2 heading_2 title-2md">
+                Now Showing</h2>
+            <div class="flex pb-5 mx-3">
+                <div class=" card-1 mr-8 relative">
+                    <img class="img-1 rounded-b"
                         src="https://m.media-amazon.com/images/M/MV5BNTFkZjdjN2QtOGE5MS00ZTgzLTgxZjAtYzkyZWQ5MjEzYmZjXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_SX300.jpg"
                         alt="img" />
-                    <h5 class="mx-2 title-1">Venom</h5>
+                        <div class="flex flex-row my-3 mx-2.5 absolute " style="top: 150px;">
+                            <span class="material-symbols-outlined" style="color: #FFFFFF;">
+                                star
+                            </span>
+                            <p class="subhead-1">8.5</p>
+                        </div>
+                    <h5 class="m-2.5 title-5">Venom</h5>
                     <div class="px-3 mb-3 flex items-center m-auto">
                         <div class="columns-1 mr-4 ">
                             <p class="movie-detail">2020</p>
@@ -262,18 +287,18 @@
                             <p class="movie-detail">Action, Adventure</p>
                         </div>
                     </div>
-                    <div class="flex flex-row my-3 mx-2">
-                        <span class="material-symbols-outlined" style="color: #FFFFFF">
-                            star
-                        </span>
-                        <p class="movie-detail">8.5</p>
-                    </div>
                 </div>
-                <div class="card-1 mr-8">
-                    <img class="img-1"
+                <div class="card-1 relative mr-8">
+                    <img class="img-1 rounded-b"
                         src="https://assetscdn1.paytm.com/images/cinema/vikram12-faa9e6c0-8c25-11ec-a324-23682b4f5e45.jpg"
                         alt="img" />
-                    <h5 class="mx-2 title-1">Vikram</h5>
+                        <div class="flex flex-row my-3 mx-2.5 absolute " style="top: 150px;">
+                            <span class="material-symbols-outlined" style="color: #FFFFFF;">
+                                star
+                            </span>
+                            <p class="subhead-1">8.5</p>
+                        </div>
+                    <h5 class="m-2.5 title-5">Vikram</h5>
                     <div class="px-3 mb-3 flex items-center m-auto">
                         <div class="columns-1 mr-4 ">
                             <p class="movie-detail">2021</p>
@@ -282,18 +307,18 @@
                             <p class="movie-detail">Action, comedy</p>
                         </div>
                     </div>
-                    <div class="flex flex-row my-3 mx-2">
-                        <span class="material-symbols-outlined" style="color: #FFFFFF;">
-                            star
-                        </span>
-                        <p id="imdb_rate" class="movie-detail">8.9</p>
-                    </div>
                 </div>
-                <div class=" card-1 mr-3">
-                    <img class="img-1"
+                <div class=" card-1 relative  ">
+                    <img class="img-1 rounded-b"
                         src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
                         alt="img" />
-                    <h5 class="mx-2  title-1">The Dark Knight</h5>
+                        <div class="flex flex-row my-3 mx-2.5 absolute " style="top: 150px;">
+                            <span class="material-symbols-outlined" style="color: #FFFFFF;">
+                                star
+                            </span>
+                            <p class="subhead-1">8.5</p>
+                        </div>
+                    <h5 class="m-2.5  title-5">The Dark Knight</h5>
                     <div class="px-3 mb-3 flex items-center m-auto">
                         <div class="columns-1 mr-4 ">
                             <p id="imdb_rate" class="movie-detail">2022</p>
@@ -302,16 +327,10 @@
                             <p id="Release" class="movie-detail">Action, Crime</p>
                         </div>
                     </div>
-                    <div class="flex flex-row  my-3 mx-2">
-                        <span class="material-symbols-outlined" style="color: #FFFFFF;">
-                            star
-                        </span>
-                        <p id="imdb_rate" class="movie-detail">8.2</p>
-                    </div>
                 </div>
             </div>
-            <h3 class=" px-3 pt-5 pb-10 title-2">
-                Browse By Category</h3>
+            <h4 class=" px-3 pt-5 pb-10 title-4 title-4md">
+                Browse By Category</h4>
             <div class="max-w-3xl ">
                 <div class="pl-3 pb-5 flex justify-between items-center m-auto ">
                     <div class="columns-1 mr-5">
@@ -336,26 +355,26 @@
                 </div>
             </div>
             <div class="mb-5">
-                <div class="flex flex-row">
-                    <div class="ml-3 mr-5">
-                        <img class="card-2"
+                <div class="flex flex-row mx-3">
+                    <div class="mr-5 card-2">
+                        <img class="h-52 w-full"
                             src="https://m.media-amazon.com/images/M/MV5BMjAyNTQ1NjA3Ml5BMl5BanBnXkFtZTgwOTIyNjIxMzE@._V1_SX300.jpg"
                             alt="img">
                     </div>
-                    <div class="">
-                        <img class="card-2 "
+                    <div class="card-2">
+                        <img class="h-52 w-full "
                             src="https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_SX300.jpg"
                             alt="img">
                     </div>
                 </div>
                 <div class="flex flex-row mt-5 ">
-                    <div class="ml-3 mr-5 mb-10">
-                        <img class="card-2"
+                    <div class="ml-3 mr-5 mb-10 card-2">
+                        <img class="h-52 w-full"
                             src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
                             alt="img">
                     </div>
-                    <div class="">
-                        <img class="card-2 mb-10 "
+                    <div class="card-2">
+                        <img class="mb-10 h-52 w-full"
                             src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SX300.jpg"
                             alt="img" />
                     </div>
@@ -363,11 +382,10 @@
             </div>
         </div>
     </section>
-    <section class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
-        <h3 class="text-center pt-10 title-2">Check Out</h3>
-        <h3 class="text-center title-2">Recent Review</h3>
+    <section  id=section-4 class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
+        <h2 class="text-center py-10 title-2 heading_2 title-2md">Check Out </br> Recent Review</h2>
         <div class="flex justify-center pb-10 ">
-            <div class=" card-1 mr-8">
+            <div class=" card-1 mr-8 ">
                 <div class="flex flex-row w-52 h-12 ml-5 mb-3">
                     <div class="w-12 h-12 rounded-full mt-5">
                         <img class="w-12 h-12 rounded-full"
@@ -466,7 +484,7 @@
             </div>
         </div>
     </section>
-    <footer class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
+    <footer  id=section-5 class="max-w-5xl rounded-3xl min-h-fit mx-auto my-20 banner-shadow">
         <div class="flex justify-center ">
 
             <span class="material-symbols-outlined mx-4  my-10 " style="color: #FFFFFF">
