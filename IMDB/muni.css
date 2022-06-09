@@ -40,6 +40,12 @@
         font-size: 30px;
         color: #FFFFFF;
     }
+    .image-feature{
+       width: 200px;
+       flex-direction: column;
+       margin: auto;
+       align-items: center;
+    }
 
     .md {
         display: flex;

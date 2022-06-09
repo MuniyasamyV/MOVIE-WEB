@@ -16,6 +16,19 @@
 .test{
     color: red;
 }
+.display{
+    display: none;
+}
+.nav {
+    background: #0097A7;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
 
 .card-2 {
     width: 300px;
@@ -101,29 +114,4 @@
     font-size: 14px;
     color: #212121;
 }
- @media (max-width: 700px) {
-    .head-1{
-        font-family: 'Roboto', 'sans-seri';
-        font-weight: 700;
-        font-size: 30px;
-        color:#FFFFFF ; 
-    }
-    .head-22{
-        font-family: 'Roboto', 'sans-seri';
-        font-weight: 400;
-        font-size: 16px;
-        color: #212121;
-    }
-    .subhead-1{
-        font-family: 'Roboto', 'sans-seri';
-        font-weight: 400;
-        font-size: 12px; 
-        color: #757575;
-    }
-    .head-21{
-        font-family: 'Roboto', 'sans-seri';
-        font-weight: 400;
-        font-size: 14px;
-        color: #212121;
-    }
-} 
+ 
